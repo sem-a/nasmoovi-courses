@@ -1,0 +1,500 @@
+body {
+    background-color: #d8bfd8;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Russo One', sans-serif; */
+
+/* Хедер */
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #d8bfd8;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header__scroll {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+}
+.header__container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header__menu {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu__item {
+    margin-left: 100px;
+}
+.menu__item a {
+    font-family: "Comfortaa", cursive;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.menu__item-scroll a {
+    color: #d8bfd8;
+    transition: 0.5s;
+}
+/*********/
+
+/* блок записаться */
+.block__welcome {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.welcome__item {
+    width: 50%;
+    height: 500px;
+}
+.logotype {
+    transform: translate(-5%, 0);
+    opacity: 0;
+}
+.logotype._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+.logo-item img {
+    display: block;
+    margin: 0 auto;
+}
+.logo-item h1 {
+    font-family: "Russo One", sans-serif;
+    font-size: 81px;
+    color: #fff0f5;
+    text-align: center;
+}
+.welcome__button {
+    margin-top: 40px;
+    text-align: center;
+    transform: translate(0, 50%);
+    opacity: 0;
+}
+.welcome__button a {
+    text-decoration: none;
+    font-family: "Russo One", sans-serif;
+    font-size: 48px;
+    color: #d8bfd8;
+    background-color: #fff0f5;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.1);
+}
+.welcome__button._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease 0.5s;
+}
+.welcome__button a:hover {
+    opacity: 0.95;
+    transition: 0.3s;
+}
+.welcome__info p {
+    font-family: "Comfortaa", cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff0f5;
+}
+.left {
+    width: 410px;
+    margin: 10px auto;
+    text-align: center;
+    transform: translate(-7%, 0);
+    opacity: 0;
+}
+.left._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+.right {
+    width: 460px;
+    display: block;
+    margin-left: auto;
+    transform: translate(7%, 0);
+    opacity: 0;
+}
+.right._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease 1s;
+}
+.welcome__human img {
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+    z-index: 0;
+    transform: translate(7%, 0);
+    opacity: 0;
+}
+.welcome__human._active img {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s ease 1s;
+}
+/*----------------------*/
+
+/* Для кого этот курс? */
+.block__who {
+    margin-top: 150px;
+}
+.who__activity {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.activity__items {
+    width: 600px;
+}
+._activity-1 {
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+._activity-1._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+._activity-2 {
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+._activity-2._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0.5s;
+}
+._activity-3 {
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+._activity-3._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0.5s;
+}
+._activity-4 {
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+._activity-4._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 1s;
+}
+.who__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    text-align: center;
+}
+.activity__title h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 48px;
+    color: #fff0f5;
+    margin-left: 90px;
+}
+.activity__description p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    color: #fff0f5;
+    width: 480px;
+    margin-left: 90px;
+}
+.paragraph__one {
+    margin-top: 30px;
+}
+.paragraph__two {
+    margin-top: 20px;
+}
+/*-----------------------*/
+/* Программа */
+.block__program {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    height: 1000px;
+}
+.program__flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.program__image {
+    padding-top: 150px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+.program__image._active {
+    opacity: 1;
+    transition: 0.5s;
+    transform: translate(0, 0);
+}
+.program__items {
+    width: 600px;
+    margin-right: 40px;
+}
+.program__title {
+    font-family: "Russo One", sans-serif;
+    font-size: 48px;
+    color: #fff0f5;
+    padding-bottom: 30px;
+}
+.back__plus {
+    position: relative;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.list__plus {
+    width: 41px;
+    height: 3px;
+    background-color: #fff0f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.list__plus::after {
+    content: "";
+    height: 41px;
+    width: 3px;
+    background-color: #fff0f5;
+    position: absolute;
+    left: 19px;
+    top: -19px;
+}
+.list__title.list__text-active .back__plus {
+    background-color: #fff0f5;
+    transition: 0.3s;
+}
+.list__title.list__text-active .list__plus {
+    transform: rotate(45deg);
+    left: 5px;
+}
+.list__title.list__text-active .list__plus,
+.list__title.list__text-active .list__plus::after {
+    background-color: #d8bfd8;
+    transition: 0.3s;
+}
+.list__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.list__title h3 {
+    font-family: "Comfortaa", cursive;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff0f5;
+    cursor: pointer;
+}
+.list__text {
+    width: 500px;
+    margin-left: auto;
+    margin-top: 20px;
+    display: none;
+}
+.list__text p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-align: right;
+}
+/*----------------------*/
+/* Консультация */
+.block__consultation {
+    margin-top: 100px;
+}
+.consultation__form-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.consultation__items {
+    background-color: #fff0f5;
+    border-radius: 50px;
+}
+.consultation__title {
+    width: 670px;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+.consultation__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 36px;
+    color: #d8bfd8;
+}
+.consultation__form {
+    margin-top: 10px;
+}
+.consultation__form-item input {
+    background-color: #fff0f5;
+    border-bottom: solid 3px #d8bfd8;
+    font-family: "Comfortaa", cursive;
+    font-size: 24px;
+    color: #d8bfd8;
+    padding: 2px 5px;
+}
+#name {
+    width: 200px;
+    margin-left: 50px;
+}
+#instagram {
+    width: 300px;
+}
+.consultation__button button {
+    font-family: "Russo One", sans-serif;
+    font-size: 48px;
+    color: #fff0f5;
+    background-color: #d8bfd8;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+.consultation__note p {
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
+    font-weight: 700;
+    color: #d8bfd8;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+/*-------------------*/
+/* Ментор */
+.block__teacher {
+    margin-top: 200px;
+}
+.teacher__flex {
+    display: flex;
+    position: relative;
+}
+.teacher__image img {
+    position: absolute;
+}
+.teacher__item {
+    z-index: 5;
+}
+.teacher__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    margin-left: 60px;
+}
+.teacher__subtitle h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 36px;
+    color: #fff0f5;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+.teacher__text {
+    width: 460px;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+.teacher__text p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff0f5;
+}
+.teacher__list {
+    width: 460px;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+.teacher__list p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff0f5;
+    width: 460px;
+}
+.teacher__list li {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff0f5;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.teacher__wrapper {
+    width: 450px;
+    background-color: #fff0f5;
+    border-radius: 50px;
+}
+.teacher__wrapper-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.teacher__photo img {
+    margin-left: 40px;
+}
+.teacher__name h4 {
+    font-family: "Comfortaa", cursive;
+    font-size: 36px;
+    font-weight: 700;
+    color: #d8bfd8;
+    width: 230px;
+    margin-right: 20px;
+}
+.teacher__about li {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d8bfd8;
+    margin-top: 30px;
+}
+.teacher__about {
+    padding-bottom: 90px;
+    width: 300px;
+    margin: 0 auto
+}
+/*---------------------*/
+/* Вас ждет */
+.block__wait {
+    margin-top: 250px;
+}
+
+
+.wait__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+}
+.wait__text p{
+    font-family: "Comfortaa", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+.wait__text span {
+    color: #fff0f5;
+    font-weight: 700;
+}
+.wait__list li {
+    font-family: "Comfortaa", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+/*----------------------*/
