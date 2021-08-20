@@ -8,7 +8,7 @@ if (animItems.length > 0) {
             const animItem = animItems[index];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top; // получение высоты
-            const animStart = 1; // коэффициент начала анимации, считается как 1/4 блока
+            const animStart = 5; // коэффициент начала анимации, считается как 1/4 блока
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
             if (animItemHeight > window.innerHeight) {

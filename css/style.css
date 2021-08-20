@@ -232,14 +232,17 @@ header {
     justify-content: space-between;
 }
 .program__image {
-    padding-top: 150px;
-    transform: translate(-50%, 0);
+    height: 1000px;
     opacity: 0;
+    transform: translate(-50%, 0);
+}
+.program__image img {
+    padding-top: 150px;
 }
 .program__image._active {
     opacity: 1;
-    transition: 0.5s;
     transform: translate(0, 0);
+    transition: all 0.5s ease 0s;
 }
 .program__items {
     width: 600px;
@@ -475,26 +478,186 @@ header {
     margin-top: 250px;
 }
 
-
+.wait__title {
+    text-align: right;
+    margin-right: 20px;
+}
 .wait__title h2 {
     font-family: "Russo One", sans-serif;
     font-size: 64px;
     color: #fff0f5;
+}
+.wait__text {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.wait__img img {
+    width: 40px;
+    height: 40px;
 }
 .wait__text p{
     font-family: "Comfortaa", cursive;
     font-size: 24px;
     font-weight: 400;
     color: white;
+    padding-left: 15px;
+}
+.wait__text {
+    opacity: 0;
+    transform: translate(-50%, 0);
+}
+.wait__text._active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.5s ease 0s;
 }
 .wait__text span {
     color: #fff0f5;
     font-weight: 700;
+}
+.wait__list {
+    margin-top: 10px;
+    margin-left: 200px;
 }
 .wait__list li {
     font-family: "Comfortaa", cursive;
     font-size: 24px;
     font-weight: 400;
     color: white;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+.wait__list._active li {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0s;
+}
+/*----------------------*/
+/* Тарифы */
+.block__tariff {
+    margin-top: 150px;
+}
+.tariff__flex {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.tariff__item {
+    width: 390px;
+    transform: translate(0, 50%);
+    opacity: 0;
+}
+.tariff__item._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+._basic-width {
+    width: 400px;
+}
+.tariff__wrapper {
+    background-color: #fff0f5;
+    border-radius: 50px;
+}
+
+.tariff__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    text-align: center;
+}
+.tariff__name h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 48px;
+    color: #d8bfd8;
+    text-align: center;
+    padding: 20px;
+}
+.tariff__info p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d8bfd8;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+._basic-prepod {
+    width: 300px;
+}
+._basic-top {
+    margin-top: 65px;
+}
+.tariff__note {
+    text-align: center;
+}
+.tariff__note p {
+    font-family: "Comfortaa", cursive;
+    font-size: 11px;
+    margin-top: 5px;
+    width: 390px;
+}
+.tariff__list li {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d8bfd8;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.tariff__list {
+    padding-bottom: 20px;
+}
+.tariff__cost h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    text-align: center;
+    margin-top: 20px;
+}
+.tariff__lot p {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    color: #fff0f5;
+    text-align: center;
+    width: 240px;
+    margin: 0 auto;
+}
+.tariff__prepay {
+    margin-top: 40px;
+    text-align: center;
+}
+.tariff__prepay a {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    color: #d8bfd8;
+    background-color: #fff0f5;
+    text-align: center;
+    padding: 20px 55px;
+    border-radius: 30px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+._prepay {
+    color: #fff0f5;
+    margin-top: 30px;
+}
+.tariff__pay {
+    margin-top: 20px;
+}
+.tariff__pay {
+    margin-top: 45px;
+    text-align: center;
+}
+.tariff__pay a {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    color: #d8bfd8;
+    text-align: center;
+    background-color: #fff0f5;
+    padding: 20px 80px;
+    border-radius: 30px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
 }
 /*----------------------*/
