@@ -590,14 +590,11 @@ header {
 ._basic-top {
     margin-top: 65px;
 }
-.tariff__note {
-    text-align: center;
-}
 .tariff__note p {
     font-family: "Comfortaa", cursive;
     font-size: 11px;
     margin-top: 5px;
-    width: 390px;
+    width: 280px;
 }
 .tariff__list li {
     font-family: "Comfortaa", cursive;
@@ -639,6 +636,16 @@ header {
     border-radius: 30px;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
 }
+.note__prepay {
+    text-align: center;
+}
+.note__prepay p{
+    font-family: "Comfortaa", cursive;
+    font-size: 11px;
+    color: #fff0f5;
+    margin-top: 25px;
+    width: 390px;
+}
 ._prepay {
     color: #fff0f5;
     margin-top: 30px;
@@ -660,4 +667,21 @@ header {
     border-radius: 30px;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
 }
+._tariff-close p,
+._tariff-close li {
+    text-decoration: line-through;
+    color: rgba(216, 191, 216, 0.5);
+}
 /*----------------------*/
+/* отзывы */
+.block__feedback {
+    margin-top: 200px;
+}
+
+.feedback__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    text-align: center;
+}
+/*-----------------------*/
