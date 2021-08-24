@@ -546,7 +546,7 @@ header {
     justify-content: space-between;
 }
 .tariff__item {
-    width: 390px;
+    width: 350px;
     transform: translate(0, 50%);
     opacity: 0;
 }
@@ -554,9 +554,6 @@ header {
     transform: translate(0, 0);
     opacity: 1;
     transition: all 0.5s ease 0s;
-}
-._basic-width {
-    width: 400px;
 }
 .tariff__wrapper {
     background-color: #fff0f5;
@@ -571,24 +568,24 @@ header {
 }
 .tariff__name h3 {
     font-family: "Russo One", sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     color: #d8bfd8;
     text-align: center;
     padding: 20px;
 }
 .tariff__info p {
     font-family: "Comfortaa", cursive;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     color: #d8bfd8;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 30px;
 }
 ._basic-prepod {
     width: 300px;
 }
 ._basic-top {
-    margin-top: 65px;
+    margin-top: 30px;
 }
 .tariff__note p {
     font-family: "Comfortaa", cursive;
@@ -598,7 +595,7 @@ header {
 }
 .tariff__list li {
     font-family: "Comfortaa", cursive;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     color: #d8bfd8;
     margin-left: 60px;
@@ -609,26 +606,26 @@ header {
 }
 .tariff__cost h4 {
     font-family: "Russo One", sans-serif;
-    font-size: 64px;
+    font-size: 48px;
     color: #fff0f5;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .tariff__lot p {
     font-family: "Russo One", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff0f5;
     text-align: center;
-    width: 240px;
+    width: 180px;
     margin: 0 auto;
 }
 .tariff__prepay {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
 }
 .tariff__prepay a {
     font-family: "Russo One", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: #d8bfd8;
     background-color: #fff0f5;
     text-align: center;
@@ -644,26 +641,19 @@ header {
     font-size: 11px;
     color: #fff0f5;
     margin-top: 25px;
-    width: 390px;
-}
-._prepay {
-    color: #fff0f5;
-    margin-top: 30px;
+    width: 350px;
 }
 .tariff__pay {
-    margin-top: 20px;
-}
-.tariff__pay {
-    margin-top: 45px;
+    margin-top: 35px;
     text-align: center;
 }
 .tariff__pay a {
     font-family: "Russo One", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: #d8bfd8;
     text-align: center;
     background-color: #fff0f5;
-    padding: 20px 80px;
+    padding: 20px 70px;
     border-radius: 30px;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
 }
