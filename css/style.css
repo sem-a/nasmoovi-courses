@@ -470,7 +470,7 @@ header {
 .teacher__about {
     padding-bottom: 90px;
     width: 300px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 /*---------------------*/
 /* Вас ждет */
@@ -497,7 +497,7 @@ header {
     width: 40px;
     height: 40px;
 }
-.wait__text p{
+.wait__text p {
     font-family: "Comfortaa", cursive;
     font-size: 24px;
     font-weight: 400;
@@ -636,7 +636,7 @@ header {
 .note__prepay {
     text-align: center;
 }
-.note__prepay p{
+.note__prepay p {
     font-family: "Comfortaa", cursive;
     font-size: 11px;
     color: #fff0f5;
@@ -667,8 +667,132 @@ header {
 .block__feedback {
     margin-top: 200px;
 }
-
+.feedback__flex {
+    margin-top: 20px;
+}
+.feedback__message {
+    width: 500px;
+    margin-left: 26px;
+    background: #fff0f5;
+    position: relative;
+    border-radius: 20px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+.feedback__message::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: calc(50% - 12px);
+    border-top: 12px solid transparent;
+    border-right: 24px solid #fff0f5;
+    border-bottom: 12px solid transparent;
+}
+.feedback__message-right {
+    width: 500px;
+    background: #fff0f5;
+    position: relative;
+    border-radius: 20px;
+    margin-right: 26px;
+    transform: translate(50%, 0);
+    opacity: 0;
+}
+.feedback__message-right::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 100%;
+    top: calc(50% - 12px);
+    border-top: 12px solid transparent;
+    border-left: 24px solid #fff0f5;
+    border-bottom: 12px solid transparent;
+}
+.feedback__items {
+    margin-top: 20px;
+}
+.feedback__item {
+    display: flex;
+    align-items: center;
+}
+._feedback-right {
+    justify-content: flex-end;
+}
+.feedback__message._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+.feedback__message-right._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
 .feedback__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    text-align: center;
+}
+.author__name {
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+.author__name._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+.author__name-right {
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+.author__name-right._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+.author__name h3 {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff0f5;
+    text-align: right;
+    margin-top: 5px;
+}
+.author__name-right h3 {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff0f5;
+    margin-top: 5px;
+}
+.feedback__message p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d8bfd8;
+    padding: 30px;
+}
+.feedback__message-right p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d8bfd8;
+    padding: 30px;
+}
+/*-----------------------*/
+/* Вопрос-ответ */
+.block__question {
+    margin-top: 200px;
+}
+.question__items {
+    margin-top: 50px;
+}
+
+.question__title h2 {
     font-family: "Russo One", sans-serif;
     font-size: 64px;
     color: #fff0f5;
