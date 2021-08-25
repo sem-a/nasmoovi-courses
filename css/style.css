@@ -789,13 +789,172 @@ header {
     margin-top: 200px;
 }
 .question__items {
-    margin-top: 50px;
+    margin-top: 100px;
 }
-
+.question {
+    background-color: #fff0f5;
+    border-radius: 30px;
+    margin-top: 50px;
+    transform: translate(0, 75%);
+    opacity: 0;
+}
+.question._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
+.answer {
+    transform: translate(0, 75%);
+    opacity: 0;
+}
+.answer._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+}
 .question__title h2 {
     font-family: "Russo One", sans-serif;
     font-size: 64px;
     color: #fff0f5;
     text-align: center;
 }
+.question p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d8bfd8;
+    padding: 20px;
+}
+.answer p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff0f5;
+    padding: 20px;
+}
 /*-----------------------*/
+/* контакты */
+.block__contact {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.contact__items {
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.contact__flex {
+    display: flex;
+    align-items: center;
+}
+.contact__input input {
+    border-bottom: solid 3px #fff0f5;
+    background-color: #d8bfd8;
+    color: #fff0f5;
+    font-size: 24px;
+    font-family: "Comfortaa", cursive;
+}
+.contact__btn-items {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact__btn button{
+    font-family: "Russo One", sans-serif;
+    font-size: 36px;
+    color: #d8bfd8;
+    background-color: #fff0f5;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.1);
+}
+.contact__note p{
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    margin-left: 30px;
+}
+
+._form-name input{
+    width: 300px;
+}
+._form-inst input{
+    width: 300px;
+    margin-left: 100px;
+}
+._form-question input{
+    width: 1100px;
+    margin-top: 60px;
+}
+
+.contact__title h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 64px;
+    color: #fff0f5;
+    margin-left: 50px;
+}
+.contact__subtitle h3{
+    font-family: "Comfortaa", cursive;
+    font-size: 24px;
+    color: white;
+    margin-left: 50px;
+}
+/*----------------------*/
+/* футер */
+footer {
+    background-color: #887888;
+}
+.footer__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__item {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer__mailing {
+    display: flex;
+    align-items: center;
+}
+.footer__network {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer__link {
+    margin-bottom: 10px;
+}
+.footer__text {
+    margin: 10px 0;
+}
+.footer__link a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.footer__text p {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.network-item i {
+    font-size: 30px;
+    color: #fff0f5;
+    margin-right: 10px;
+}
+.footer__mailing a {
+    color: #fff0f5;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.footer__mailing input {
+    font-size: 16px;
+    color: white;
+    border-bottom: solid 2px white;
+    background-color: #887888;
+}
+/*-------------------*/
